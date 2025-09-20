@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Appointment - Salon</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+      background-color: #f9f7f5;
+      color: #333;
+    }
+
+    header {
+      text-align: center;
+      padding: 80px 20px 40px;
+      background: url('https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80') no-repeat center/cover;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      margin-bottom: 10px;
+      font-weight: 400;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+    }
+
+    .appointment-container {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .appointment-container h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 20px;
+      font-weight: 400;
+      color: #444;
+    }
+
+    .appointment-container p {
+      text-align: center;
+      font-size: 1.1rem;
+      margin-bottom: 40px;
+      color: #666;
+    }
+
+    .calendly-inline-widget {
+      width: 100%;
+      height: 700px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      background: #222;
+      color: #ccc;
+      font-size: 0.9rem;
+      margin-top: 60px;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      .appointment-container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Book Your Appointment</h1>
+    <p>Choose your preferred time and service with ease</p>
+  </header>
+
+  <section class="appointment-container">
+    <h2>Schedule with Us</h2>
+    <p>Select a time that works best for you. We look forward to giving you the best salon experience.</p>
+
+    <!-- Calendly embed -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/gracewealth76" style="min-width:320px;height:700px;"></div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bekky Beauty. All rights reserved.</p>
+    <p>
+      <a href="tel:1234567890">Call</a> | 
+      <a href="mailto:hello@bekkybeauty.com">Email</a> | 
+      <a href="#">Instagram</a>
+    </p>
+  </footer>
+</body>
+</html>
